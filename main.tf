@@ -1,4 +1,7 @@
 resource "null_resource" "test" {
+  triggers = {
+    abc = timestamp()
+  }
 provisioner "local-exec" {
   command = "echo Hello World - dev"
 }
