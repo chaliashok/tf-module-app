@@ -1,8 +1,8 @@
 #iam policy
 resource "aws_iam_policy" "policy" {
-  name        = "${var.component}-${var.env}-ssm-pm-policy"
+  name        = "${var.component}-${var.env}-ssm-pm-policy-latest"
   path        = "/"
-  description = "${var.component}-${var.env}-ssm-pm-policy"
+  description = "${var.component}-${var.env}-ssm-pm-policy-latest"
 
   policy = jsonencode({
     "Version": "2012-10-17",
